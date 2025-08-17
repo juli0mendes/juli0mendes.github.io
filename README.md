@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -11,14 +10,17 @@
       background: linear-gradient(135deg, #ff7e5f, #feb47b);
       color: #333;
       text-align: center;
+      transition: background 0.3s, color 0.3s;
     }
     header {
       padding: 80px 20px;
       color: white;
+      background: transparent;
     }
     header h1 {
       font-size: 3em;
       margin-bottom: 10px;
+      text-shadow: 1px 1px 8px rgba(0,0,0,0.15);
     }
     header p {
       font-size: 1.2em;
@@ -29,17 +31,49 @@
       padding: 20px;
       border-radius: 12px;
       max-width: 700px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      transition: background 0.3s, color 0.3s;
     }
     a {
       color: #ff7e5f;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #feb47b;
     }
     footer {
       margin: 30px 0;
       font-size: 0.9em;
       color: #eee;
+      transition: color 0.3s;
+    }
+
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: linear-gradient(135deg, #232526, #414345);
+        color: #f3f3f3;
+      }
+      header {
+        color: #ff7e5f;
+      }
+      section {
+        background: #2c2c2c;
+        color: #f3f3f3;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+      }
+      a {
+        color: #feb47b;
+      }
+      a:hover {
+        color: #ff7e5f;
+      }
+      footer {
+        color: #888;
+      }
     }
   </style>
 </head>
