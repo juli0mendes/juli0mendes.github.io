@@ -56,7 +56,7 @@
 
   <section>
     <h2>Meus projetos</h2>
-    <p>Confira meus projetos no <a href="https://github.com/julio-mendes" target="_blank">meu GitHub</a>.</p>
+    <p>Confira meus projetos no <a href="https://github.com/juli0mendes" target="_blank">meu GitHub</a>.</p>
   </section>
 
   <footer>
