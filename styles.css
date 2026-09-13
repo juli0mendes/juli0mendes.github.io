@@ -58,26 +58,24 @@ h1 em, h2 span, .services-heading h2 span { color: var(--coral); font-style: nor
 .text-link { border-bottom: 1px solid var(--ink); font-size: 12px; font-weight: 800; padding-bottom: 4px; }
 .text-link span, .contact-link span, .service-card a span { color: var(--coral); margin-left: 8px; }
 .hero-diagram { background: #183134; height: 470px; overflow: hidden; position: relative; }
-.diagram-grid { background-image: linear-gradient(rgba(213,243,106,.09) 1px, transparent 1px), linear-gradient(90deg, rgba(213,243,106,.09) 1px, transparent 1px); background-size: 42px 42px; inset: 45px; position: absolute; }
-.diagram-caption, .diagram-index { color: var(--acid); position: absolute; z-index: 2; }
-.diagram-caption { left: 26px; top: 25px; }
-.diagram-index { bottom: 25px; right: 26px; }
-.system-map { height: 100%; inset: 0; position: absolute; width: 100%; }
+.system-map { background: #183134; display: block; height: 100%; inset: 0; position: absolute; width: 100%; }
+.map-background { fill: #183134; }
+.map-caption, .map-index { fill: #d5f36a; font-family: var(--mono); font-size: 10px; letter-spacing: .12em; }
 .map-flow { fill: none; stroke-width: 1.5; }
-.map-flow-acid { stroke: var(--acid); }
-.map-flow-coral { stroke: var(--coral); }
+.map-flow-acid { stroke: #d5f36a; }
+.map-flow-coral { stroke: #ff735c; }
 .map-node { font-family: var(--mono); font-size: 10px; letter-spacing: .06em; text-anchor: middle; text-transform: uppercase; }
 .map-node circle, .map-node rect { vector-effect: non-scaling-stroke; }
 .map-node text { dominant-baseline: middle; }
-.map-node-edge circle, .map-node-data circle { fill: var(--acid); }
+.map-node-edge circle, .map-node-data circle { fill: #d5f36a; }
 .map-node-edge text, .map-node-data text { fill: #102022; }
-.map-node-event circle { fill: transparent; stroke: var(--acid); stroke-dasharray: 3 5; stroke-width: 1; }
-.map-node-event text { fill: var(--acid); }
-.map-node-core circle { fill: var(--coral); }
+.map-node-event circle { fill: transparent; stroke: #d5f36a; stroke-dasharray: 3 5; stroke-width: 1; }
+.map-node-event text { fill: #d5f36a; }
+.map-node-core circle { fill: #ff735c; }
 .map-node-core text { fill: #102022; font-size: 9px; }
-.map-node-cloud rect { fill: var(--coral); }
+.map-node-cloud rect { fill: #ff735c; }
 .map-node-cloud text, .map-node-knowledge text { fill: #102022; }
-.map-node-knowledge circle { fill: var(--acid); }
+.map-node-knowledge circle { fill: #d5f36a; }
 .map-note { fill: rgba(213,243,106,.68); font-family: var(--mono); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
 .signal-strip { background: var(--warm); border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); }
 .signal-grid { align-items: center; display: grid; grid-template-columns: 1.8fr repeat(3, 1fr); min-height: 146px; }
