@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Júlio Mendes — arquitetura de software, cloud, sistemas distribuídos e GenAI aplicada.">
+  <meta name="theme-color" content="#101b1d">
+  <title>Júlio Mendes — Sistemas que continuam de pé</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Júlio Mendes, início">
+      <span class="brand-mark">JM</span>
+      <span>Júlio Mendes</span>
+    </a>
+    <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Ativar tema escuro">
+      <span class="theme-icon" aria-hidden="true">◐</span>
+      <span class="theme-label">Escuro</span>
+    </button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+      <span>Menu</span>
+      <span class="menu-icon" aria-hidden="true">+</span>
+    </button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#metodo">Método</a>
+      <a class="nav-contact" href="mailto:jmendes@live.com">Vamos conversar <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Staff Software Engineer · Itaú Unibanco</p>
+        <h1>Arquitetura para o que <em>não pode parar.</em></h1>
+        <p class="hero-lede">Eu ajudo times a transformar complexidade técnica em sistemas distribuídos mais claros, resilientes e prontos para evoluir.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#servicos">Conheça meu trabalho <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="https://github.com/juli0mendes" target="_blank" rel="noreferrer">Ver GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-diagram reveal" aria-label="Diagrama abstrato de um sistema distribuído" role="img">
+        <div class="diagram-caption">SYSTEM / 01</div>
+        <div class="diagram-grid"></div>
+        <div class="node node-a"><span>event</span></div>
+        <div class="node node-b"><span>core</span></div>
+        <div class="node node-c"><span>data</span></div>
+        <div class="node node-d"><span>edge</span></div>
+        <div class="connector connector-a"></div>
+        <div class="connector connector-b"></div>
+        <div class="connector connector-c"></div>
+        <div class="diagram-index">01 — 04</div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="Resumo profissional">
+      <div class="section-shell signal-grid">
+        <p class="signal-intro">Uma visão de engenharia que conecta<br><strong>produto, plataforma e operação.</strong></p>
+        <div class="signal-item"><strong>E2E</strong><span>visão de ponta<br>a ponta</span></div>
+        <div class="signal-item"><strong>∞</strong><span>curiosidade<br>por arquitetura</span></div>
+        <div class="signal-item"><strong>01</strong><span>objetivo: deixar<br>o time mais forte</span></div>
+      </div>
+    </section>
+
+    <section id="sobre" class="about section-shell section-space">
+      <div class="section-label reveal"><span>01</span><span>Sobre</span></div>
+      <div class="about-content reveal">
+        <h2>Engenharia é uma disciplina de <span>decisões.</span></h2>
+        <div class="about-text">
+          <p>Sou engenheiro de software, Java evangelist e arquiteto de sistemas distribuídos. Meu trabalho acontece na fronteira entre estratégia e implementação: entender o problema, tornar as escolhas explícitas e construir uma base que aguente o próximo capítulo.</p>
+          <p>Atuo com arquitetura orientada a eventos, cloud, mensageria, observabilidade e GenAI. Gosto de documentação que reduz ruído, código que revela intenção e soluções que respeitam o contexto de quem vai operá-las.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="services section-shell section-space">
+      <div class="section-label reveal"><span>02</span><span>Como posso ajudar</span></div>
+      <div class="services-heading reveal">
+        <h2>Problemas complexos,<br><span>próximos passos concretos.</span></h2>
+        <p>Serviços pensados para destravar decisões e aumentar a capacidade técnica do seu time.</p>
+      </div>
+      <div class="service-list">
+        <article class="service-card reveal">
+          <span class="service-number">01</span><div class="service-icon" aria-hidden="true">⌁</div>
+          <h3>Arquitetura de soluções</h3>
+          <p>Do contexto ao desenho: decisões arquiteturais, trade-offs, integração e um caminho de execução que cabe na realidade.</p>
+          <a href="mailto:jmendes@live.com?subject=Consultoria%20de%20arquitetura">Explorar serviço <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="service-card service-card-featured reveal">
+          <span class="service-number">02</span><div class="service-icon" aria-hidden="true">◌</div>
+          <h3>Cloud & arquitetura de software</h3>
+          <p>Desenho de plataformas AWS, microsserviços, APIs, dados, Terraform e os limites certos para cada componente.</p>
+          <a href="mailto:jmendes@live.com?subject=Cloud%20e%20arquitetura">Explorar serviço <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="service-card reveal">
+          <span class="service-number">03</span><div class="service-icon" aria-hidden="true">✦</div>
+          <h3>GenAI, aulas & mentoria</h3>
+          <p>Do primeiro experimento à operação: agentes, orquestração, práticas de desenvolvimento e formação de pessoas.</p>
+          <a href="mailto:jmendes@live.com?subject=Mentoria%20ou%20aula">Explorar serviço <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="metodo" class="method section-space">
+      <div class="section-shell">
+        <div class="section-label light reveal"><span>03</span><span>Meu método</span></div>
+        <div class="method-intro reveal">
+          <h2>Menos cerimônia.<br><em>Mais sinal.</em></h2>
+          <p>Arquitetura não é desenhar caixas bonitas. É criar entendimento compartilhado para que boas decisões se repitam quando ninguém está olhando.</p>
+        </div>
+        <div class="method-steps">
+          <div class="method-step reveal"><span>01</span><h3>Enquadrar</h3><p>Contexto, restrições e o que significa sucesso.</p></div>
+          <div class="method-step reveal"><span>02</span><h3>Conectar</h3><p>Domínio, tecnologia e operação na mesma conversa.</p></div>
+          <div class="method-step reveal"><span>03</span><h3>Destravar</h3><p>Decisões pequenas que colocam o time em movimento.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stack section-shell section-space">
+      <div class="section-label reveal"><span>04</span><span>Ferramentas do ofício</span></div>
+      <div class="stack-layout">
+        <h2 class="reveal">O ecossistema<br>por trás da ideia.</h2>
+        <div class="stack-cloud reveal">
+          <span>Java</span><span>Spring</span><span class="accent">Event-driven</span><span>AWS</span><span>Terraform</span><span>Kafka</span><span>RabbitMQ</span><span>DynamoDB</span><span>MongoDB</span><span>Redis</span><span>Observability</span><span class="accent">GenAI</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-shell reveal">
+      <div>
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Um bom sistema começa com uma boa conversa</p>
+        <h2>Tem uma decisão difícil<br>na mesa?</h2>
+      </div>
+      <a class="contact-link" href="mailto:jmendes@live.com">Escreva para mim <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <span>© <span id="current-year">2026</span> Júlio Mendes</span>
+    <span>Construindo clareza para sistemas distribuídos.</span>
+    <div class="footer-links"><a href="https://www.linkedin.com/in/juli0mendes/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/juli0mendes" target="_blank" rel="noreferrer">GitHub</a><a href="mailto:jmendes@live.com">Email</a></div>
+  </footer>
+</body>
+</html>
