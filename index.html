@@ -48,13 +48,41 @@
       <div class="hero-diagram reveal" aria-label="Diagrama abstrato de um sistema distribuído" role="img">
         <div class="diagram-caption">SYSTEM / 01</div>
         <div class="diagram-grid"></div>
-        <div class="node node-a"><span>event</span></div>
-        <div class="node node-b"><span>core</span></div>
-        <div class="node node-c"><span>data</span></div>
-        <div class="node node-d"><span>edge</span></div>
-        <div class="connector connector-a"></div>
-        <div class="connector connector-b"></div>
-        <div class="connector connector-c"></div>
+        <svg class="system-map" viewBox="0 0 520 470" aria-hidden="true">
+          <defs>
+            <marker id="arrow-acid" markerHeight="8" markerWidth="8" orient="auto-start-reverse" refX="7" refY="4" viewBox="0 0 8 8">
+              <path d="M0 0L8 4L0 8Z" fill="#d5f36a"></path>
+            </marker>
+            <marker id="arrow-coral" markerHeight="8" markerWidth="8" orient="auto-start-reverse" refX="7" refY="4" viewBox="0 0 8 8">
+              <path d="M0 0L8 4L0 8Z" fill="#ff735c"></path>
+            </marker>
+          </defs>
+          <path class="map-flow map-flow-acid" d="M122 158C165 158 171 202 214 202" marker-end="url(#arrow-acid)"></path>
+          <path class="map-flow map-flow-coral" d="M306 235C346 235 347 166 389 166" marker-end="url(#arrow-coral)"></path>
+          <path class="map-flow map-flow-acid" d="M306 251C348 251 350 323 394 323" marker-end="url(#arrow-acid)"></path>
+          <path class="map-flow map-flow-acid" d="M259 174C259 130 300 94 340 94" marker-end="url(#arrow-acid)"></path>
+          <path class="map-flow map-flow-coral" d="M429 205C429 231 395 237 306 237" marker-end="url(#arrow-coral)"></path>
+          <g class="map-node map-node-edge">
+            <circle cx="90" cy="158" r="32"></circle><text x="90" y="154">edge</text><text x="90" y="167">/ legacy</text>
+          </g>
+          <g class="map-node map-node-event">
+            <circle cx="259" cy="220" r="49"></circle><text x="259" y="181">event</text><text x="259" y="193">stream</text>
+          </g>
+          <g class="map-node map-node-core">
+            <circle cx="259" cy="220" r="27"></circle><text x="259" y="224">core</text>
+          </g>
+          <g class="map-node map-node-cloud">
+            <rect height="38" rx="19" width="90" x="340" y="75"></rect><text x="385" y="99">cloud</text>
+          </g>
+          <g class="map-node map-node-knowledge">
+            <circle cx="429" cy="166" r="39"></circle><text x="429" y="162">data</text><text x="429" y="176">+ genai</text>
+          </g>
+          <g class="map-node map-node-data">
+            <circle cx="429" cy="323" r="39"></circle><text x="429" y="319">data</text><text x="429" y="333">inform.</text>
+          </g>
+          <text class="map-note" x="28" y="213">partners</text>
+          <text class="map-note" x="345" y="380">operational truth</text>
+        </svg>
         <div class="diagram-index">01 — 04</div>
       </div>
     </section>

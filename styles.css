@@ -62,16 +62,23 @@ h1 em, h2 span, .services-heading h2 span { color: var(--coral); font-style: nor
 .diagram-caption, .diagram-index { color: var(--acid); position: absolute; z-index: 2; }
 .diagram-caption { left: 26px; top: 25px; }
 .diagram-index { bottom: 25px; right: 26px; }
-.node { align-items: center; background: var(--acid); border-radius: 50%; color: var(--ink); display: flex; font-family: var(--mono); font-size: 10px; height: 92px; justify-content: center; position: absolute; text-transform: uppercase; width: 92px; z-index: 2; }
-.node span { transform: rotate(-13deg); }
-.node-a { left: 15%; top: 24%; }
-.node-b { background: var(--coral); height: 128px; left: 45%; top: 44%; width: 128px; }
-.node-c { bottom: 15%; right: 16%; }
-.node-d { background: transparent; border: 1px solid var(--acid); color: var(--acid); right: 18%; top: 16%; }
-.connector { border-top: 1px dashed var(--acid); height: 1px; opacity: .75; position: absolute; transform-origin: left; z-index: 1; }
-.connector-a { left: 27%; top: 38%; transform: rotate(22deg); width: 21%; }
-.connector-b { left: 55%; top: 55%; transform: rotate(-28deg); width: 29%; }
-.connector-c { left: 57%; top: 48%; transform: rotate(-44deg); width: 24%; }
+.system-map { height: 100%; inset: 0; position: absolute; width: 100%; }
+.map-flow { fill: none; stroke-width: 1.5; }
+.map-flow-acid { stroke: var(--acid); }
+.map-flow-coral { stroke: var(--coral); }
+.map-node { font-family: var(--mono); font-size: 10px; letter-spacing: .06em; text-anchor: middle; text-transform: uppercase; }
+.map-node circle, .map-node rect { vector-effect: non-scaling-stroke; }
+.map-node text { dominant-baseline: middle; }
+.map-node-edge circle, .map-node-data circle { fill: var(--acid); }
+.map-node-edge text, .map-node-data text { fill: #102022; }
+.map-node-event circle { fill: transparent; stroke: var(--acid); stroke-dasharray: 3 5; stroke-width: 1; }
+.map-node-event text { fill: var(--acid); }
+.map-node-core circle { fill: var(--coral); }
+.map-node-core text { fill: #102022; font-size: 9px; }
+.map-node-cloud rect { fill: var(--coral); }
+.map-node-cloud text, .map-node-knowledge text { fill: #102022; }
+.map-node-knowledge circle { fill: var(--acid); }
+.map-note { fill: rgba(213,243,106,.68); font-family: var(--mono); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
 .signal-strip { background: var(--warm); border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); }
 .signal-grid { align-items: center; display: grid; grid-template-columns: 1.8fr repeat(3, 1fr); min-height: 146px; }
 .signal-intro { font-size: 13px; line-height: 1.55; margin: 0; }
