@@ -8,6 +8,7 @@
   --line: rgba(16, 32, 34, .16);
   --dark-line: rgba(244, 241, 233, .18);
   --surface-dark: #102022;
+  --method-text: #f4f1e9;
   --mono: 'DM Mono', monospace;
   --sans: 'Manrope', sans-serif;
 }
@@ -100,8 +101,10 @@ h1 em, h2 span, .services-heading h2 span { color: var(--coral); font-style: nor
 .service-card-featured { background: var(--coral); color: var(--ink); }
 .service-card-featured .service-icon, .service-card-featured a span { color: var(--ink); }
 .service-card-featured p { color: rgba(16,32,34,.72); }
-.method { background: var(--surface-dark); color: var(--paper); }
-.method .section-label { color: var(--paper); }
+.service-disclaimer { border-top: 1px solid var(--line); color: var(--muted); font-family: var(--mono); font-size: 10px; line-height: 1.7; margin: 25px 0 0; max-width: 760px; }
+.service-disclaimer span { color: var(--coral); display: block; font-weight: 500; letter-spacing: .08em; margin-bottom: 4px; text-transform: uppercase; }
+.method { background: var(--surface-dark); color: var(--method-text); }
+.method .section-label { color: var(--method-text); }
 .method-intro { align-items: end; display: grid; gap: 15%; grid-template-columns: 1fr 1fr; margin: 55px 0 75px; }
 .method-intro h2 { font-size: clamp(44px, 6vw, 77px); letter-spacing: -.08em; line-height: .97; margin: 0; }
 .method-intro em { color: var(--acid); font-style: normal; }
@@ -116,7 +119,7 @@ h1 em, h2 span, .services-heading h2 span { color: var(--coral); font-style: nor
 .stack-layout { display: grid; gap: 14%; grid-template-columns: 1fr 1fr; }
 .stack-cloud { align-content: start; display: flex; flex-wrap: wrap; gap: 9px; padding-top: 4px; }
 .stack-cloud span { border: 1px solid var(--line); font-family: var(--mono); font-size: 10px; padding: 9px 11px; }
-.stack-cloud .accent { background: var(--acid); border-color: var(--acid); }
+.stack-cloud .accent { background: var(--acid); border-color: var(--acid); color: #102022; }
 .contact { align-items: end; background: var(--coral); display: flex; justify-content: space-between; margin-bottom: 100px; min-height: 330px; padding: 48px 55px; }
 .contact .eyebrow { margin-bottom: 55px; }
 .contact h2 { font-size: clamp(36px, 5vw, 65px); letter-spacing: -.075em; line-height: .98; margin: 0; }
